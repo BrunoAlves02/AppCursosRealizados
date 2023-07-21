@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.novo_curso.NovoCursoActivity">
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fab_salvar_novo_curso"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_confirmar_branco" />
+
+	<EditText
+		android:id="@+id/edit_nome_curso"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="100dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:ems="10"
+		android:hint="Nome do curso"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txt_novo_curso" />
+
+	<EditText
+		android:id="@+id/edit_descricao_curso"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:ems="10"
+		android:hint="Descricao do curso"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/edit_nome_curso" />
+
+	<EditText
+		android:id="@+id/edit_categoria_curso"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="16dp"
+		android:ems="10"
+		android:hint="Categoria do curso"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/edit_descricao_curso" />
+
+	<EditText
+		android:id="@+id/edit_total_horas_curso"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="16dp"
+		android:ems="10"
+		android:hint="Total de horas do curso"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/edit_categoria_curso" />
+
+	<TextView
+		android:id="@+id/txt_novo_curso"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="Registre um novo curso!"
+		android:textColor="#000000"
+		android:textSize="25sp"
+		android:textStyle="bold"
+		app:fontFamily="@font/bai_jamjuree_light"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
